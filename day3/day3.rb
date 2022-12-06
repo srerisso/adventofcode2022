@@ -34,7 +34,7 @@ file_data.each do |el|
     a.push(find_dupes(el))
 end
 
-puts a
+# puts a
 # puts priorities[:a]
 sum_priorities = 0
 
@@ -43,4 +43,17 @@ a.each do |el|
    sum_priorities = sum_priorities + priority
 end
 
-puts sum_priorities
+puts("PART 1 sum of priorities is:", sum_priorities)
+
+# ****************
+# ********* PART 2 
+# groups of 3 elves
+# 1. split file_data in groups of 3
+puts("FILE DATA: ",file_data)
+
+while !file_data.empty?
+    check_3(file_data)
+end
+
+# 2. each el of group, explode it in chars 
+# 3. intersect three arrays

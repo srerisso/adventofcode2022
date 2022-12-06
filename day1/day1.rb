@@ -14,10 +14,10 @@ file_data.each do |el|
     end
 end
 
-print(sum_file_data.max)
+print("MAX Calories Count is: ", sum_file_data.max)
 
 # PART 2
 
 ordered_sum_file_data = sum_file_data.sort
-print(ordered_sum_file_data)
-print(ordered_sum_file_data.pop(3).sum)
+# print(ordered_sum_file_data)
+print("PART 2 result is: ",ordered_sum_file_data.pop(3).sum)
