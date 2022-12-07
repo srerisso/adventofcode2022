@@ -50,29 +50,35 @@ printf("PART 1 sum of priorities is: %d\n", sum_priorities)
 # ********* PART 2 
 # groups of 3 elves
 
-# ****************************************************************
-# METHODS, FUNCTIONS and others
-# Function check3 : Function that checks an array of 3 elements
-# Return value: the value that intersects in the 3 arrays.
-def check3(three)
-    # return three[0].intersection(three[1].chars,three[2].chars)
-    return three
-end
-
 # 1. split file_data in groups of 3
 # puts("FILE DATA: ",file_data)
+b=[]
+sum_priorities_2=0
+priority2=0
 
 while !file_data.empty?
     fd = file_data.pop(3)
     fd.map {|element| element.chars }
-    check3(fd)
+    # printf("fd[0] %s \n", fd[0])
+    # printf("fd[1] %s \n", fd[1])
+    # printf("fd[2] %s \n", fd[2])
+    b.push(fd[0].chars.intersection(fd[1].chars,fd[2].chars))
+
     # if !val.empty?
     #     total += val
     # end
 end
 
-# check3()
+b.each do |el|
+    priority2 = priorities[el[0].to_sym]
+    sum_priorities_2 += priority2
+    # print(el[0])
+ end
+ 
+#  priorities.each do |d|
+#     print(d).value
+#  end
+ printf("PART 2 sum of priorities is: %d\n", sum_priorities_2)
 
 # 2. each el of group, explode it in chars 
 # 3. intersect three arrays
-
