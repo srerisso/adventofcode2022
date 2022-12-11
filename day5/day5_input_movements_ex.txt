@@ -1,0 +1,10 @@
+move 1 from 3 to 5
+move 5 from 5 to 4
+move 6 from 7 to 3
+move 6 from 1 to 3
+
+TRY #1
+That's not the right answer. If you're stuck, make sure you're using the full input data; there are also some general tips on the about page, or you can ask for hints on the subreddit. Please wait one minute before trying again. (You guessed BJMFDWSZ.) [Return to Day 5]
+
+TRY #2
+That's not the right answer. If you're stuck, make sure you're using the full input data; there are also some general tips on the about page, or you can ask for hints on the subreddit. Please wait one minute before trying again. (You guessed BJMFDWS Z.) [Return to Day 5]
