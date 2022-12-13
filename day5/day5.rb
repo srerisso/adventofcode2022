@@ -28,6 +28,12 @@ STACK7 = ["S","B","D","J","M","F","T","R"]  #["SBDJMFTR"]
 STACK8 = ["L","H","R","B","T","V","M"]      #["LHRBTVM"]
 STACK9 = ["Q","P","D","S","V"]              #["QPDSV"]
 STACKS = [STACK1,STACK2,STACK3,STACK4,STACK5,STACK6,STACK7,STACK8,STACK9]
+
+# Example STACKS
+# STACK1 = ["Z","N"]          #["ZN"]
+# STACK2 = ["M","C","D"]      #["MCD"]
+# STACK3 = ["P"]              #["P"]
+# STACKS = [STACK1,STACK2,STACK3]
 pp("ORIGINAL STACKS",STACKS)
 
 # crates moves : move #n crates from stack number#o to stack number#d
